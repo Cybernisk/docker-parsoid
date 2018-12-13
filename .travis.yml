@@ -13,9 +13,3 @@ script:
 
 notifications:
   email: false
-  irc:
-    channels:
-      - "chat.freenode.net#thenets-opensource"
-    on_success: change # default: always
-    on_failure: always # default: always
-    use_notice: true

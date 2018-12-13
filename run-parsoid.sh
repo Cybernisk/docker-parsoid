@@ -2,7 +2,7 @@
 
 set -e
 
-# backward compatibility
+#backward compatibility
 if [[ -z "$PARSOID_NUM_WORKERS" && -n "$NUM_WORKERS" ]]; then
     PARSOID_NUM_WORKERS="$NUM_WORKERS"
 fi
@@ -12,7 +12,7 @@ cd $PARSOID_HOME
 domains="${!PARSOID_DOMAIN_*} ${!PARSOID_MWAPIS_*}"
 
 if [ -z $domains ]; then
-    echo >&2 'You must provide PARSOID_DOMAIN_* variables, for example: export PARSOID_DOMAIN_localhost=http://localhost/w/api.php'
+    echo >&2 'You must provite PARSOID_DOMAIN_* variables, for example: export PARSOID_DOMAIN_localhost=http://localhost/w/api.php'
     exit 2;
 fi
 
@@ -67,7 +67,7 @@ services:
         #allowCORS: 'some.domain.org'
 
         # Allow override of port/interface:
-        serverPort: 8000
+        #serverPort: 8000
         #serverInterface: '127.0.0.1'
 
         # Enable linting of some wikitext errors to the log

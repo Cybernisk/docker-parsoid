@@ -1,15 +1,17 @@
 FROM alpine
 
-MAINTAINER luiz@thenets.org
+LABEL version="0.1"
+LABEL author="Cybernick"
+LABEL description="Parsoid docker image"
+
+ARG PARSOID_VERSION=master
 
 # Install required packages
 RUN apk add --no-cache nodejs nodejs-npm python git tar bash make
 
 ENV PARSOID_HOME=/var/lib/parsoid \
-    PARSOID_USER=parsoid
-
-# Build branch name: v0.8.0, v0.9.0, master 
-ENV PARSOID_VERSION=master
+    PARSOID_USER=parsoid \
+    PORT=8142
 
 # Parsoid setup
 RUN set -x; \
@@ -30,5 +32,5 @@ RUN set -x; \
 COPY run-parsoid.sh /run-parsoid.sh
 RUN chmod -v +x /run-parsoid.sh
 
-EXPOSE 8000
+EXPOSE 8142
 CMD ["/run-parsoid.sh"]
