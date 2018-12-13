@@ -1,6 +1,6 @@
 # Docker image of Parsoid for MediaWiki
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/cybernick/parsoid.svg?style=flat-square)](https://hub.docker.com/r/thenets/parsoid/) [![Build Status](https://travis-ci.org/cybernisk/docker-parsoid.svg?branch=master)](https://travis-ci.org/thenets/docker-parsoid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/cybernick/parsoid.svg?style=flat-square)](https://hub.docker.com/r/thenets/parsoid/) [![Build Status](https://travis-ci.org/Cybernisk/docker-parsoid.svg?branch=master)](https://travis-ci.org/cybernisk/docker-parsoid)
 
 
 This repo contains a [Docker](https://docs.docker.com/) image to run the [Parsoid](https://www.mediawiki.org/wiki/Parsoid) application. See the full [Parsoid/Setup documentation](https://www.mediawiki.org/wiki/Parsoid/Setup#Docker) for help.
