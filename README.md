@@ -49,4 +49,4 @@ mwApis:
 
 - [pastakhov](https://github.com/pastakhov): Creator of the original code base.
 - [muellermartin](https://github.com/muellermartin): Improved the documentation.
-- [thenets] (https://github.com/thenets/docker-parsoid) Creator of forked version
+- [thenets](https://github.com/thenets/docker-parsoid) Creator of forked version

@@ -4,14 +4,15 @@ LABEL version="0.1"
 LABEL author="Cybernick"
 LABEL description="Parsoid docker image"
 
-ARG PARSOID_VERSION=master
-
 # Install required packages
 RUN apk add --no-cache nodejs nodejs-npm python git tar bash make
 
 ENV PARSOID_HOME=/var/lib/parsoid \
     PARSOID_USER=parsoid \
     PORT=8142
+
+# Avaiable branch v0.9.0, v0.10.0. Master branch is by default.
+ARG PARSOID_VERSION=master
 
 # Parsoid setup
 RUN set -x; \
